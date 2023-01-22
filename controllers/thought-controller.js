@@ -60,5 +60,37 @@ const userController = {
     },
 
     //delete user
+    deleteUser({ params }, res) {
+        User.findOneAndDelete({ _id: params.id })
+            .then((dbUserData) => {
+                if (!dbUserData) {
+                    return res.status(404).json({ message: "no user with thos id!" });
+                }
+                return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } });
+            })
+            .catch((err) => res.json(err));
+    },
+
+    //add friend
+    addFriend({ params }, res) {
+        User.findByIdAndUpdate(
+            { _id: params.id },
+            { $addToSet: { friends: params.friendId} },
+            { new: true }
+        )
+            .select("-__v")
+            .then((dbUserData) => {
+                if (!dbUserData) {
+                    res.status(404).json({ message: "no used found by  tis id!" });
+                    return;
+                }
+                res.json(dbUserData);
+            })
+            .catch((err) => {
+                res.status(400).json(err);
+            });
+    },
+
+    //delete friend
 
 }
