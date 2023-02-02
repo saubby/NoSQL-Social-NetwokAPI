@@ -32,22 +32,18 @@ The following animations show examples of the application's API routes being tes
 
 The following animation shows GET routes to return all users and all thoughts being tested in Insomnia:
 
-![Demo of GET routes to return all users and all thoughts being tested in Insomnia.](./Assets/18-nosql-homework-demo-01.gif)
+![](./Assets/Recording.webm)
 
-The following animation shows GET routes to return a single user and a single thought being tested in Insomnia:
+The following shows Users and Friends screenshot of insomia.
 
-![Demo that shows GET routes to return a single user and a single thought being tested in Insomnia.](./Assets/18-nosql-homework-demo-02.gif)
+![](./Assets/Usersandfriends.PNG)
 
-The following animation shows the POST, PUT, and DELETE routes for users being tested in Insomnia:
+The following shows Thoughts and Reactions screenshot of insomia.
 
-![Demo that shows the POST, PUT, and DELETE routes for users being tested in Insomnia.](./Assets/18-nosql-homework-demo-03.gif)
+![](./Assets/Thoughts%20and%20reaction.PNG)
 
-In addition to this, your walkthrough video should show the POST, PUT, and DELETE routes for thoughts being tested in Insomnia.
-
-The following animation shows the POST and DELETE routes for a user’s friend list being tested in Insomnia:
-
-![Demo that shows the POST and DELETE routes for a user’s friend list being tested in Insomnia.](./Assets/18-nosql-homework-demo-04.gif)
-
-In addition to this, your walkthrough video should show the POST and DELETE routes for reactions to thoughts being tested in Insomnia.
 
 ## Deployment
+
+https://github.com/saubby/NoSQL-Social-NetwokAPI
+
